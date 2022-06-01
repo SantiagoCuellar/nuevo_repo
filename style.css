@@ -197,6 +197,8 @@ header a:hover {
     color: white;
 }
 
+/* TEST MEDIA */
+
 @media (min-width: 720px) {
     header {
         position: fixed;
