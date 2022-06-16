@@ -1,0 +1,1 @@
+Agregue keywords, idioma español, author, descripcion, la imagen de icono para la busqueda y favicon.
