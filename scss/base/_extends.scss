@@ -1,7 +1,8 @@
 @import '../base/listas';
 
+// Propiedades a reutilizar en varios lados
 
-button {
+%botones {
 	font-size: nth($medidas-texto, 7);
 	font-weight: bold;
 	padding: 10px 20px;

@@ -1,9 +1,9 @@
 @import './base/listas';
 @import './components/header';
 @import './components/mainlanding';
-@import './components/button';
 @import './components/footer';
 @import './base/mixins';
+@import './base/extends';
 
 
 * {
@@ -53,3 +53,4 @@ a {
 	text-decoration: none;
 	color: nth($colores, 2) !important;
 }
+@include animation-mixin(slidein, 0, 100%)

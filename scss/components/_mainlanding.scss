@@ -1,4 +1,5 @@
 @import '../base/listas';
+@import '../base/mixins';
 
 
 #home {
@@ -25,17 +26,23 @@
 	background-attachment: fixed;
 	height: 700px;
 	width: 100%;
+	@include for-text {
+		margin-left: 0;
+		margin-right: 0;
+		font-size: nth($medidas-texto, 7);
+	}
+	}
 	h2 {
 		color: nth($colores, 11);
 		text-align: center;
 	}
-}
+
 .equipo {
 	height: 120px;
 	text-align: center;
 	padding: 3%;
 }
-.donde-estamos {
+#donde-estamos {
 	display: block;
 	color: nth($colores, 2);
 	text-align: center;
@@ -62,7 +69,7 @@ iframe {
 .carousel-inner {
 	max-height: 120vh;
 }
-.contactanos {
+#contactanos {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -74,4 +81,7 @@ iframe {
 	button {
 		font-size: 2vw;
 	}
+}
+button {
+	@extend %botones
 }
