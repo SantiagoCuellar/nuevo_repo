@@ -1,300 +1,55 @@
+@import './base/listas';
+@import './components/header';
+@import './components/mainlanding';
+@import './components/button';
+@import './components/footer';
+@import './base/mixins';
+
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-
-/* BODY Y FUENTES */
-
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #F2EBDC;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: nth($colores, 1);
 }
-
 h1 {
-    font-size: 3.5em;
+	font-size: nth($medidas-texto, 2);
+	animation-duration: 4s;
+	position: relative;
+	animation-name: slidein;
 }
-
 h2 {
-    font-size: 2.7em;
+	font-size: nth($medidas-texto, 3);
+	animation-duration: 4s;
+	position: relative;
+	animation-name: slidein;
 }
-
 h3 {
-    font-size: 2.5em;
+	font-size: nth($medidas-texto, 4);
+	animation-duration: 4s;
+	position: relative;
+	animation-name: slidein;
 }
-
 h4 {
-    font-size: 2.2em;
+	font-size: nth($medidas-texto, 5);
+	animation-duration: 4s;
+	position: relative;
+	animation-name: slidein;
 }
-
 h5 {
-    font-size: 1.7em;
+	font-size: nth($medidas-texto, 6);
+	animation-duration: 4s;
+	position: relative;
+	animation-name: slidein;
 }
-
 p {
-    font-size: 1.5em;
+	font-size: nth($medidas-texto, 5);
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    animation-duration: 4s;
-    position: relative;
-    animation-name: slidein;
-}
-
 a {
-    text-decoration: none;
-    color: #fff !important;
-}
-
-@keyframes slidein {
-    0% {
-        margin-left: 100%;
-        width: 300%
-    }
-
-    100% {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-
-/* BOTON RESERVA */
-button {
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    color: white;
-    background-color: palevioletred;
-}
-
-button:hover {
-    background-color: rgb(231, 58, 116);
-    transition: all 1s ease-out;
-}
-
-
-
-/* HEADER */
-
-.logo {
-    margin: 0;
-    height: 30vh;
-    padding: 10px 15px;
-}
-
-
-header .nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header {
-    height: 20%;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 2;
-}
-
-.nav-link:hover {
-    color: palevioletred !important;
-    transition: all 1s ease-out;
-}
-
-
-#home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: url("../multimedia/imagenes/catcafe1.jpg") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-#home h1 {
-    color: white;
-}
-
-
-.somos-catfecito {
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 700px;
-    width: 100%;
-}
-
-.somos-catfecito h2 {
-    color: black;
-    text-align: center;
-}
-
-
-.equipo {
-    height: 120px;
-    text-align: center;
-    padding: 3%;
-}
-
-.donde-estamos {
-    display: block;
-    color: white;
-    text-align: center;
-    height: 500px;
-    width: 100%;
-    padding: 3rem;
-    color: black;
-}
-
-iframe {
-    width: 100%;
-    height: 350px;
-    padding: 2rem;
-}
-
-
-#div h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    color: white;
-    background-color: rgb(45, 45, 45);
-}
-
-.carousel-inner {
-    max-height: 120vh;
-}
-
-
-
-/* GRID PARA GALERIA */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    background-color: rgb(45, 45, 45);
-}
-
-.contactanos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    color: black;
-    padding: 10px;
-    height: 200px;
-}
-
-.contactanos button {
-    font-size: 2vw;
-}
-
-
-/* TEST FOOTER */
-
-footer {
-    color: #F0F0F2;
-    background-color: #F2EBDC;
-    background-image: linear-gradient(62deg, #FFF 0%, #F2EBDC 100%);
-    padding: 5%;
-}
-
-ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-    transition: .5s;
-}
-
-.fa-instagram:hover {
-    opacity: 0.7;
-    transition: .5s;
-}
-
-.fa-twitter {
-    opacity: 0.7;
-    transition: .5s;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-
-/* TEST MEDIA */
-
-@media (min-width: 720px) {
-    header {
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container-fluid {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header .nav {
-        flex-direction: row;
-        padding-bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #somos-catfecito {
-        margin-left: 0;
-        margin-right: 0;
-    }
+	text-decoration: none;
+	color: nth($colores, 2) !important;
 }

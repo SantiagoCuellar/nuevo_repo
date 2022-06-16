@@ -1,0 +1,77 @@
+@import '../base/listas';
+
+
+#home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url("/multimedia/imagenes/catcafe1.jpg") !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	h1 {
+		color: nth($colores, 2);
+	}
+}
+.somos-catfecito {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 700px;
+	width: 100%;
+	h2 {
+		color: nth($colores, 11);
+		text-align: center;
+	}
+}
+.equipo {
+	height: 120px;
+	text-align: center;
+	padding: 3%;
+}
+.donde-estamos {
+	display: block;
+	color: nth($colores, 2);
+	text-align: center;
+	height: 500px;
+	width: 100%;
+	padding: 3rem;
+	color: nth($colores, 11);
+}
+iframe {
+	width: 100%;
+	height: 350px;
+	padding: 2rem;
+}
+#div {
+	h4 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10vh;
+		color: nth($colores, 2);
+		background-color: nth($colores, 11);
+	}
+}
+.carousel-inner {
+	max-height: 120vh;
+}
+.contactanos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	color: nth($colores, 11);
+	padding: 10px;
+	height: 200px;
+	button {
+		font-size: 2vw;
+	}
+}

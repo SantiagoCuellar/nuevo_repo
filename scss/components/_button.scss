@@ -1,0 +1,17 @@
+@import '../base/listas';
+
+
+button {
+	font-size: nth($medidas-texto, 7);
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid nth($colores, 9);
+	box-shadow: 2px 2px 10px nth($colores, 9);
+	color: nth($colores, 2);
+	background-color: nth($colores, 12);
+	&:hover {
+		background-color: nth($colores, 10);
+		transition: all 1s ease-out;
+	}
+}

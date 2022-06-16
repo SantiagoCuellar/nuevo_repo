@@ -1,0 +1,47 @@
+@import '../base/listas';
+
+
+footer {
+	color: nth($colores, 4);
+	background-color: nth($colores, 1);
+	background-image: linear-gradient(62deg, nth($colores, 3) 0%, nth($colores, 5) 100%);
+	padding: 5%;
+}
+ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	&:hover {
+		opacity: 0.7;
+		transition: .5s;
+	}
+}
+.fa-instagram {
+	&:hover {
+		opacity: 0.7;
+		transition: .5s;
+	}
+	background: nth($colores, 6);
+	color: nth($colores, 2);
+}
+.fa-twitter {
+	opacity: 0.7;
+	transition: .5s;
+	background: nth($colores, 7);
+	color: nth($colores, 2);
+}
+.fa-facebook {
+	background: nth($colores, 8);
+	color: nth($colores, 2);
+}

@@ -1,0 +1,27 @@
+@import '../base/listas';
+
+.logo {
+	margin: 0;
+	height: 30vh;
+	padding: 10px 15px;
+}
+header {
+	.nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	height: 20%;
+	text-decoration: none;
+	color: nth($colores, 11);
+	font-weight: bold;
+	background: nth($colores, 9);
+	z-index: 2;
+}
+.nav-link {
+	&:hover {
+		color: nth($colores, 12) !important;
+		transition: all 1s ease-out;
+	}
+}
